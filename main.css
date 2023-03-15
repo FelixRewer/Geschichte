@@ -1,0 +1,64 @@
+@keyframes fadeIn {
+  from {
+    width: 0%;
+  }
+  to {
+    width: 20%;
+  }
+}
+
+#map {
+  height: 100%;
+  width: 100%;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+#info {
+  width: 0%;
+  height: 100%;
+  padding: 10px;
+}
+
+.fade-in {
+  animation: fadeIn 1s forwards;
+}
+
+.fade-out {
+  animation: fadeIn 1s reverse;
+}
+
+.marker-div {
+  background-color: #F0F0F0;
+  border-radius: 8px;
+  color: #000000;
+  font-size: 14px;
+  padding: 10px 15px;
+  position: relative;
+}
+
+.marker-div::after {
+  content: "";
+  position: absolute;
+  left: 50%;
+  top: 100%;
+  transform: translate(-50%, 0);
+  width: 0;
+  height: 0;
+  border-left: 8px solid transparent;
+  border-right: 8px solid transparent;
+  border-top: 8px solid #4285F4;
+}
+
+[class$=api-load-alpha-banner] {
+  display: none;
+}
+
+
