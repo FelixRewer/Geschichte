@@ -1,86 +1,263 @@
 const vertices = [
 	{
-  	position: { lat: 48.858510205327526, lng: 24.997363639587647 } // Tlumatsch 
+  	position: { lat: 48.858510205327526, lng: 24.997363639587647 }, // Tłumacz 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "5 Juli 1944: \"Marsch nach Tlumatsch\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 48.92247950338839, lng: 24.709182095597992 } // Iwano-Frankiwsk 
+  	position: { lat: 48.92247950338839, lng: 24.709182095597992 }, // Iwano-Frankiwsk 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "6 Juli 1944: \"Stanislau\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 49.83720969766367, lng: 24.028120229137635 } // Lwiw
+  	position: { lat: 49.83720969766367, lng: 24.028120229137635 }, // Lwiw
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "7 Juli 1944: \"Lemberg\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 52.229882950377416, lng: 21.012139193317456 } // Warschau
+  	position: { lat: 52.229882950377416, lng: 21.012139193317456 }, // Warschau
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "8 Juli 1944: \"Warschau\"";
+      return content;
+    }
   },
   {
   	position: { lat: 53.13042834274601, lng: 23.173260210587987 }, // Białystok 
     createContent: () => {
     	const content = document.createElement("div");
-    	content.innerText = "Merkbuch Eintrag vom 16 Juli 1944: \"Bei Panzwerangriff im Wald verwundet\"";
+    	content.innerText = "10 Juli 1944: \"Bialistock\". wahrscheinlch Ankunft in Białystok \n 16 Juli 1944: \"Bei Panzwerangriff im Wald verwundet\" \n 17 Juli 1944: \"Kampfverbandsplatz\", wahrscheinlich auch in Białystok";
       return content;
     }
   },
   {
-  	position: { lat: 52.1060382481324, lng: 19.944899933912204 } // Łowicz 
+  	position: { lat: 52.1060382481324, lng: 19.944899933912204 }, // Łowicz 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "18 Juli 1944: \"Lazarett 2 Lowitsch\", warscheinliche Ankunft in Łowicz \n 21. Juli 1944: \"Operation\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 52.40801970958172, lng: 16.953585152862853 } // Posen
+  	position: { lat: 52.40801970958172, lng: 16.953585152862853 }, // Posen
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "28 Juli 1944: \"Posen, Glagau… Lazarettzug Chemnitz\", warscheinlich Reise über Posen und Glagau nach Chemnitz";
+      return content;
+    }
   },
   {
-  	position: { lat: 51.663565085654334, lng: 16.084664807947675 } // Głogów 
+  	position: { lat: 51.663565085654334, lng: 16.084664807947675 }, // Głogów 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "28 Juli 1944: \"Posen, Glagau… Lazarettzug Chemnitz\", warscheinlich Reise über Posen und Glagau nach Chemnitz";
+      return content;
+    }
   },
   {
-  	position: { lat: 50.827985925196735, lng: 12.920606200732937 } // Chemnitz 
+  	position: { lat: 50.827985925196735, lng: 12.920606200732937 }, // Chemnitz 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "28 Juli 1944: 28 Juli 1944: \"Posen, Glagau… Lazarettzug Chemnitz\", Ankunft in Chemnitz";
+      return content;
+    }
   },
   {
-  	position: { lat: 49.44495026117179, lng: 11.065285315128218 } // Nürnberg 
+  	position: { lat: 49.44495026117179, lng: 11.065285315128218 }, // Nürnberg 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "30 Juli 1944: \"Nürnberg, Regensburg, Passau\", wahrscheinlich zweitägige Verlegung nach Mauer-Öhling";
+      return content;
+    }
   },
     {
-  	position: { lat: 49.014565842591104, lng: 12.097629461938682 } // Regensburg 
+  	position: { lat: 49.014565842591104, lng: 12.097629461938682 }, // Regensburg 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "30 Juli 1944: \"Nürnberg, Regensburg, Passau\", wahrscheinlich zweitägige Verlegung nach Mauer-Öhling";
+      return content;
+    }
   },
     {
-  	position: { lat: 48.56667694335858, lng: 13.431816666812342 } // Passau 
+  	position: { lat: 48.56667694335858, lng: 13.431816666812342 }, // Passau 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "30 Juli 1944: \"Nürnberg, Regensburg, Passau\", wahrscheinlich zweitägige Verlegung nach Mauer-Öhling";
+      return content;
+    }
   },
     {
-  	position: { lat: 48.09875460825303, lng: 14.799057362277331 } // Amstetten 
+  	position: { lat: 48.09875460825303, lng: 14.799057362277331 }, // Amstetten 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "30 Juli 1944: \"Ankunft im Res.Laz. Mauer Öhling\", genaue Position unbekannt \n 14 August 1944: \"Entlassung aus dem Lazarett\" \n 15 August 1944: \"Urlaub\", unklar wo er da war";
+      return content;
+    }
   },
     {
-  	position: { lat: 47.868201225253266, lng: 12.637512949064835 } // Traunstein 
+  	position: { lat: 47.868201225253266, lng: 12.637512949064835 }, // Traunstein 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "30 August 1944: \"Traunstein\"";
+      return content;
+    }
   },
     {
-  	position: { lat: 47.65991828395983, lng: 12.541765941991807 } // Seegatterl? 
+  	position: { lat: 47.65991828395983, lng: 12.541765941991807 }, // Seegatterl
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "2 Oktober 1944: \"Marsch nach Seegatta\", wahrscheinlich Seegatterl";
+      return content;
+    }
   },
     {
-  	position: { lat: 47.760809180109284, lng: 12.6459602398962 } // Ruhrpolding 
+  	position: { lat: 47.760809180109284, lng: 12.6459602398962 }, // Ruhrpolding 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "11 Oktober 1944: \"Marsch über Ruhpolding\"";
+      return content;
+    }
   },
       {
-  	position: { lat: 47.73562262919188, lng: 12.455976216806894 } // Unterwössen 
+  	position: { lat: 47.73562262919188, lng: 12.455976216806894 }, // Unterwössen 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "12 Oktober 1944: \"Reit im Winkl, Unterwössen\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 47.80681807472418, lng: 12.591172887053238 } // Bergen 
+  	position: { lat: 47.80681807472418, lng: 12.591172887053238 }, // Bergen 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "13 Oktober 1944: \"Bergen, Traunstein\" \n 1 November 1944: \"von Traunstein abgefahren\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 48.20529493555178, lng: 16.373850080310827 } // Wien 
+  	position: { lat: 48.20529493555178, lng: 16.373850080310827 }, // Wien 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "2 November 1944: \"Wien\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 50.26443457509497, lng: 19.026809736103967 } // Katowice  
+  	position: { lat: 50.26443457509497, lng: 19.026809736103967 }, // Katowice  
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "3 November 1944: \"Kattowitz\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 53.12260851408931, lng: 18.00459576686589 } // Bydgoszcz  
+  	position: { lat: 53.12260851408931, lng: 18.00459576686589 }, // Bydgoszcz  
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "5 November 1944: \"Bromberg\"";
+      return content;
+    }
   },
   {
-  	position: { lat: 53.77792996051308, lng: 20.479802408299076 } // Olsztyn  
+  	position: { lat: 53.77792996051308, lng: 20.479802408299076 }, // Olsztyn  
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "8 November 1944: \"Allenstein\" \n 10 November 1944: \"2 Tage in Friederichswalde\", es ist unklar was Friederichswalde ist";
+      return content;
+    }
+  },
+  {
+  	position: { lat: 54.30687052815491, lng: 22.304211937981385 }, // Goldap  
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Ferdinant verstarb am 28 November 1944 im Raum Hegelingen, Krs. Goldap. Er erlag nach offiziellem Bericht an einem Granatensplitter, der ihn während der Abwehr eines sowjertischen Angriffes im Herz getroffen hatte. \n Am 1 Dezember 1944 wurde er wohl im Heldenfriedhod Reimannswalde, Krs. Goldap unter militärischen Ehren beigesetzt. Wir konnten diesen Friedhof leider nicht lokalisieren.";
+      return content;
+    }
   },
 ]
 
 const points = [
 	{
-		position: { lat: 52.06324611959037, lng: 6.918926117660113 }, // Wohnhaus in Ahaus
+		position: { lat: 52.06324611959037, lng: 6.918926117660113 }, // Wohnhaus in Ahaus MIT BILD VOM IHM
     createContent: () => {
     	const content = document.createElement("div");
-    	content.innerText = "Wohnhaus";
+    	content.innerText = "Zuhause, Ahaus Ottenstein, Feldmark 33\n Ferdinant wurde am 11.08.1926 geboren, war 1.69 m groß und schlank.";
       return content;
     }
-	}
+	},
+  {
+		position: { lat: 52.075256709586554, lng: 7.0008214333989836 }, // Ausbildungsplatz bei Anton Pomberg
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Gebr. Pomberg GmbH & Co. KG \n Ferdinant machte bei Anton Pomberg seine Lehre zum Tischler, die er am 13.03.1943 abschloss.";
+      return content;
+    }
+	},
+  {
+		position: { lat: 51.9383156468531, lng: 7.167651854636709 }, // erhalten des Wehrpasses
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Coesfeld \n Hier erhielt Ferdinant am 20.04.1943 seinen Wehrpass, wurde also in die Wehrmacht rekrutiert.";
+      return content;
+    }
+	},
+  {
+		position: { lat: 45.1135987278747, lng: 15.18170711121544 }, // Einsatz Kroatien
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Irgendwo in Kroatien \n Ferdinant war vom 18.12.1943 bis zum 18.03.1944 in Kroatien eingesetzt zur \"Bekämpfung der Bandenbewegung in Kroatien\". \n Mit der Bandenbewegung ist wahrscheinlich die sich da weiter zuspitzende kommunistische Bewegung in Kroatien gemeint. Hauptmotiv dieser war es die Faschisten aus Kroatien zu werfen und Kroatien zu befreien, zum Missfallen der Achsenmächte. ";
+      return content;
+    }
+	},
+  {
+		position: { lat: 54.774133405966595, lng: 29.621084417873416 }, 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Es war Bewegungskrieg bei dem zunächst ein großer Landgewinn und viele Krieggefangene, trotz der zunächst ca. 1600 km lange Frontlinie, zu verzeichnen waren. Am Anfang wurden ca. 3 Millionen deutsche Soldaten eingesetzt.";
+      return content;
+    }
+  },
+  {
+		position: { lat: 53.774133405966595, lng: 29.621084417873416 }, 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Dabei waren die Bedingungen an der Front sehr schlecht. Es gab einen dauerhaften Wassermangel und die Umgebung war oft schlammig. Vor allem aber mussten die Soldaten mit der Kälte kämpfen, da es im ersten Jahr keine Winterkleidung gab. die Winter in Russland aber besonders kalt werden.";
+      return content;
+    }
+  },
+  {
+		position: { lat: 52.774133405966595, lng: 29.621084417873416 }, 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Dadurch, dass die UDSSR nicht so schnell auf einen Angriff Deutschlands vorbereitet war, wurde sie zunächst bis Moskow zurückgedrängt. Durch die hohen Verluste wurden 1942 große Reformen in der roten Armee angeregt.";
+      return content;
+    }
+  },
+  {
+		position: { lat: 51.774133405966595, lng: 29.621084417873416 }, 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Durch die hohen Verluste wurden 1942 große Reformen in der roten Armee angeregt. Ab dem Frühjahr 1943 konnten Sie wieder Landgewinne verzeichnen und vertrieben die Deutschen daraufhin immer weiter aus Russland raus. Schon im Sommer 1944 waren die Frontlinien wieder wie bei Kriegsbeginn. Im Sommer 1945 stand die rote Armee vor Berlin.";
+      return content;
+    }
+  },
+  {
+		position: { lat: 50.774133405966595, lng: 29.621084417873416 }, 
+    createContent: () => {
+    	const content = document.createElement("div");
+    	content.innerText = "Operation Barbarossa forderte auf deutscher Seite das Leben von über 3.8 Millionen und auf sowjertischer Seite über 27 Millionen Soldaten.";
+      return content;
+    }
+  },
 ]
 
 frontlines = {
