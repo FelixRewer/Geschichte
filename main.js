@@ -1,6 +1,6 @@
 const vertices = [
 	{
-  	position: { lat: 48.858510205327526, lng: 24.997363639587647 }, // Tłumacz 
+    position: { lat: 48.858510205327526, lng: 24.997363639587647 }, // Tłumacz
     createContent: () => {
     	const content = document.createElement("div");
     	content.innerText = "5 Juli 1944: \"Marsch nach Tlumatsch\"";
@@ -391,19 +391,16 @@ function initMap() {
     zoom: 5,
     mapId: '4504f8b37365c3d0',
   });
-  
+
   const poly = new google.maps.Polyline({
+    path: vertices.map(v => v.position),
     strokeColor: '#FF0000',
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
   poly.setMap(map);
 
-  const path = poly.getPath();
-
   vertices.forEach(vertex => {
-  	path.push(vertex.position);
-  
   	if (vertex.createContent) {
     	const marker = new google.maps.Marker({
       	position: vertex.position,
