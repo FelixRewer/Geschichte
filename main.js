@@ -14,8 +14,8 @@ const vertices = [
   {
   	position: { lat: 53.13042834274601, lng: 23.173260210587987 }, // Białystok 
     createContent: () => {
-    	const content = document.createElement("div");
-    	content.innerText = "Merkbuch Eintrag vom 16 Juli 1944: \"Bei Panzwerangriff im Wald verwundet\"";
+    	const content = document.createElement('div');
+    	content.innerText = 'Merkbuch Eintrag vom 16 Juli 1944: \"Bei Panzwerangriff im Wald verwundet\"';
       return content;
     }
   },
@@ -69,15 +69,15 @@ const vertices = [
   },
   {
   	position: { lat: 53.77792996051308, lng: 20.479802408299076 } // Olsztyn  
-  },
+  }
 ]
 
 const points = [
 	{
 		position: { lat: 52.06324611959037, lng: 6.918926117660113 }, // Wohnhaus in Ahaus
     createContent: () => {
-    	const content = document.createElement("div");
-    	content.innerText = "Wohnhaus";
+    	const content = document.createElement('div');
+    	content.innerText = 'Wohnhaus';
       return content;
     }
 	}
@@ -85,8 +85,7 @@ const points = [
 
 frontlines = {
   july: [
-    /* July 1 1944 */
-    [
+    [ /* July 1 1944 */
       { lat: 59.398009582095966, lng: 27.900668368157195 },
       { lat: 57.85820801080987, lng: 28.19258753163586},
       { lat: 55.359084579155116, lng: 28.793650213294967},
@@ -100,8 +99,7 @@ frontlines = {
       { lat: 47.21588766172145, lng: 25.080764942060387},
       { lat: 46.08584614660286, lng: 30.540517112978616 }
     ],
-    /* July 15 1944 */
-    [
+    [ /* July 15 1944 */
       { lat: 59.398009582095966, lng: 27.900668368157195 },
       { lat: 56.40549153314217, lng: 28.69918872511797},
       { lat: 54.86232321181895, lng: 24.356291721842148},
@@ -218,7 +216,7 @@ function initMap() {
   });
   
   const poly = new google.maps.Polyline({
-    strokeColor: "#FF0000",
+    strokeColor: '#FF0000',
     strokeOpacity: 1.0,
     strokeWeight: 2,
   });
@@ -239,7 +237,7 @@ function initMap() {
         content: vertex.createContent()
       });
       
-      marker.addListener("click", () => {
+      marker.addListener('click', () => {
         infowindow.open({
           anchor: marker,
           map
@@ -259,7 +257,7 @@ function initMap() {
         content: vertex.createContent()
       });
       
-      marker.addListener("click", () => {
+      marker.addListener('click', () => {
         infowindow.open({
           anchor: marker,
           map
